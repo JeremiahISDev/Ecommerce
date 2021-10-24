@@ -42,7 +42,11 @@ export function CartProvider({ children }) {
 
   function checkout() {
     setCart([])
-    alert("Thank you for your purchase")
+    (function() {
+      emailjs.init("user_po4TB5uU5qm4CjIYUuTkW");
+      })();
+      emailjs.send('service_e6tpbv7', 'template_umu96uf', {'order_info':localStorage.getItem('cart')});
+  }
   }
 
   const value = {
@@ -57,4 +61,3 @@ export function CartProvider({ children }) {
   }
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>
-}
