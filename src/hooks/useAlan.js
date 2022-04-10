@@ -110,7 +110,7 @@ export default function useAlan() {
         }
       })
     )
-  }, [])
+  },[alanInstance])
 
   return null
 }

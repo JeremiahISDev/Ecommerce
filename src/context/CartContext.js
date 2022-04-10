@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react"
 import useLocalStorage from "../hooks/useLocalStorage.js"
 import storeItems from "../items.json"
-
+import emailjs from 'emailjs-com';
 const CartContext = React.createContext()
 
 export function useCart() {
@@ -39,17 +39,15 @@ export function CartProvider({ children }) {
       return prevCart.filter(entry => entry.itemId !== itemId)
     })
   }
-
+var order = JSON.stringify(localStorage.getItem('VOICE_STORE-cart'));
   function checkout() {
-    setCart([])
-    (function() {
-      emailjs.init("user_po4TB5uU5qm4CjIYUuTkW");
-      })();
-      emailjs.send('service_e6tpbv7', 'template_umu96uf', {'order_info':localStorage.getItem('cart')});
-  }
-  }
-
-  const value = {
+	var email = window.prompt('What\'s your Email?');
+    emailjs.init("user_po4TB5uU5qm4CjIYUuTkW"); 
+	emailjs.send('service_e6tpbv7', 'template_umu96uf',{'order_info':`There were ${cart.length} items ordered.\n They Were: ${order}`,'customer_email':email});
+	window.alert(`Order Completed Successfully\nYou will recieve an email shortly regarding payment and order.\nThanks For Ordering!`);
+	setCart([])
+}
+const value = {
     cart: formattedCart,
     showCart: !isCartEmpty,
     showCartItems,
@@ -58,6 +56,7 @@ export function CartProvider({ children }) {
     addToCart,
     removeFromCart,
     checkout
-  }
+  };
+return <CartContext.Provider value={value}>{children}</CartContext.Provider>
 
-  return <CartContext.Provider value={value}>{children}</CartContext.Provider>
+}

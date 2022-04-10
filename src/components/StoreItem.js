@@ -20,7 +20,7 @@ export default function StoreItem({ item }) {
           <img
             alt="e-commerce"
             className="object-cover object-center w-full h-full block"
-            src={`https://dummyimage.com/210x140/${item.imageColor}/${item.imageColor}`}
+            src= {`${item.image}`}
           />
         </div>
         <div className="mt-4 flex items-end justify-between">

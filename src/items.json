@@ -1,66 +1,74 @@
 [
   {
-    "id": 1,
+    "id": "Red",
     "name": "Red",
     "category": "Primary Color",
     "priceCents": 1600,
-    "imageColor": "F00",
+    "image": "https://www.google.com/favicon.ico",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure eum facere minima, dolores repudiandae quo animi earum."
   },
   {
-    "id": 2,
+    "id": "Yellow",
     "name": "Yellow",
     "category": "Primary Color",
     "priceCents": 2100,
-    "imageColor": "FF0",
+    "image": "https://www.google.com/favicon.ico",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure eum facere minima, dolores repudiandae quo animi earum."
   },
   {
-    "id": 3,
+    "id": "Blue",
     "name": "Blue",
     "category": "Primary Color",
     "priceCents": 1200,
-    "imageColor": "00F",
+    "image": "https://www.google.com/favicon.ico",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure eum facere minima, dolores repudiandae quo animi earum."
   },
   {
-    "id": 4,
+    "id": "Orange",
     "name": "Orange",
     "category": "Secondary Color",
     "priceCents": 1800,
-    "imageColor": "F60",
+    "image": "https://www.google.com/favicon.ico",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure eum facere minima, dolores repudiandae quo animi earum."
   },
   {
-    "id": 5,
+    "id": "Green",
     "name": "Green",
     "category": "Secondary Color",
     "priceCents": 1600,
-    "imageColor": "0F0",
+    "image": "https://www.google.com/favicon.ico",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure eum facere minima, dolores repudiandae quo animi earum."
   },
   {
-    "id": 6,
+    "id": "Purple",
     "name": "Purple",
     "category": "Secondary Color",
     "priceCents": 2100,
-    "imageColor": "60F",
+    "image": "https://www.google.com/favicon.ico",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure eum facere minima, dolores repudiandae quo animi earum."
   },
   {
-    "id": 7,
+    "id": "Light Gray",
     "name": "Light Gray",
     "category": "Grayscale",
     "priceCents": 1200,
-    "imageColor": "AAA",
+    "image": "https://www.google.com/favicon.ico",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure eum facere minima, dolores repudiandae quo animi earum."
   },
   {
-    "id": 8,
-    "name": "Dark Gray",
+    "id": "Black",
+    "name": "Black",
     "category": "Grayscale",
     "priceCents": 1600,
-    "imageColor": "333",
+    "image": "https://www.google.com/favicon.ico",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure eum facere minima, dolores repudiandae quo animi earum."
+  },
+{
+    "id": "The unknown Color",
+    "name": "The Color Of Unknown",
+    "category": "Primary Color",
+    "priceCents": 10000,
+    "image": "http://4.bp.blogspot.com/-rNygV--X2Lk/TmlX3cSvgaI/AAAAAAAAEGI/WTJL9_-W1v0/s400/colorwheel.png",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure eum facere minima, dolores repudiandae quo animi earum."
   }
 ]
